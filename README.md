@@ -57,7 +57,15 @@ Author Information
 ### Support & Contact
 <b>
 Email: Kaushal95300@gmail.com </br>
+
 Linkedin : https://www.linkedin.com/in/kaushal-soni-988650146/ </br>
-Github : https://github.com/kush95300 </b> </br>
+
+Github : https://github.com/kush95300 
+
+Medium : https://kaushalsoni.medium.com </b> 
+
+
+
+ </br>
 
 
