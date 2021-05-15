@@ -21,7 +21,7 @@
                     - iproute-tc
                     - kubectl
   
-- name: "docker con"
+- name: "Systemd set as Docker Cgroup "
   copy:
             dest: /etc/docker/daemon.json
             content: '{
@@ -29,7 +29,7 @@
                      }'
   notify: restart docker 
 
-- name: "services"
+- name: "Kubelet and Docker Services Started"
   service:
             name: "{{ item }}"
             state: started
@@ -38,17 +38,17 @@
       - docker
       - kubelet
 
-- name: "docker con"
+- name: "Kubernetes Bridge file updated"
   copy:
             dest: /etc/sysctl.d/k8s.conf
             src: bridge.yml
-- name: "Pulling Images"
+- name: "Restarting Systememd"
   shell:
             cmd: "sysctl --system"
 - name: "Copying Token"
   copy:
             src: "/token.txt"
             dest: "~/token.txt"
-- name: "Creating Token"
+- name:  "Token Applied"
   shell:
             cmd: "bash ~/token.txt "
