@@ -43,11 +43,11 @@ Example Playbook
 
 ```
 
-License
--------
-
-BSD
-Free to use.
+License & COPYRIGHT
+-------------------
+ © Kaushal Soni
+ 
+ Licence Under the [MIT Licence](LICENSE)
 
 Author Information
 ------------------
